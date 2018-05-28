@@ -11,12 +11,11 @@ var $auth_token;
         parent::__construct();
         $this->load->model('global_model'); 
 
-        $this->client_id = '1000.FRWMM5NCK3CK31533ID8ESV8SBGNC9';    
-        $this->client_secret = '8a2b00f956e18607b1b4d85ee6537c318ce97647df'; 
-        $this->auth_token = '8a2b00f956e18607b1b4d85ee6537c318ce97647df'; 
+		// Enter all these values below.
+        $this->client_id = '';    
+        $this->client_secret = ''; 
+        $this->auth_token = ''; 
         
-        // The function ZCRMRestClient::initialize() must be called on startup of app
-        // ZCRMRestClient::initialize();  
     }
 
 
@@ -31,7 +30,9 @@ var $auth_token;
     {
 		// This is ZohoCRM API Version 1.0
 		//   header("Content-type: application/xml");
-		$token="394ca2c14ec78baf4a6ad834b1f41a7d";
+
+		// Enter token here
+		$token="";
 		$xml = '<Leads>
 		<row no="1">
 		<FL val="Lead Source">Web Download</FL>
